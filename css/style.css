@@ -10,9 +10,9 @@
 h1 { 
     text-align: center;
     font-family: 'Righteous', cursive;
-    box-shadow: .6em;
+    box-shadow: .1em 0 0 #0f0f0f;
     font-size: calc(2em + 1vw);
-    width: 23ch;
+    width: 13ch;
     overflow: hidden;
     color: #FFF;
     white-space: nowrap;
@@ -31,6 +31,21 @@ h1 {
       box-shadow: .6em 0 0 transparent;
     }
   }
+
+h2{
+    color: lime; 
+    font-family: "Courier";
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 8s steps(60, end); 
+}
+  
+h2:nth-child(2){
+    animation: type2 8s steps(60, end);
+}
 
 h2 {
     margin-top: 0%;
@@ -85,6 +100,7 @@ footer {
     width: 12rem;
     height: 12rem;
     margin-bottom: 2%;
+    border: 4px solid rgb(255, 255, 255);
 
 }
 
@@ -96,11 +112,7 @@ footer {
 }
 
 .instagram {
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 }
 
 .facebook {
@@ -131,11 +143,15 @@ footer {
     background-color: #34af23;
 }
 
-button:hover {
-    background: rgb(250, 250, 250);
-    color: #030303;
-    font-size: 30px;
-    font-weight: bold;
-    
+button {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
+button:hover {
+    box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
+
+}
